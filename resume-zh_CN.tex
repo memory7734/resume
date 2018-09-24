@@ -4,86 +4,122 @@
 
 \documentclass{resume}
 \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-% \usepackage{NotoSansSC_external}
-% \usepackage{NotoSerifCJKsc_external}
-% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{linespacing_fix} % disable extra space before next section
 \usepackage{cite}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{张文杰}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \phone{155-XXXX-XXXX} \textperiodcentered\ 
+  \email{memory7734@gmail.com} \textperiodcentered\ 
+  \github[memory7734]{https://github.com/memory7734}}
  
-\section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+\section{\faGraduationCap\ 教育背景}
+\datedsubsection{\textbf{华中科技大学}\ 计算机科学与技术学院\ 计算机技术}{2018 -- 至今}
+\datedsubsection{\textbf{武汉理工大学}\ 计算机科学与技术学院\ 软件工程}{2014 -- 2018}
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
-\begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
-\end{itemize}
+\section{\faUsers\ 项目经历}
 
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
+\datedsubsection{\textbf{基于分布式的可拔插计算调度框架}}{2018年4月 -- 2018年6月}
 \begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
 \begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
+  \item 采用主从结构，中心节点负责系统的调度与任务的分发工作，任务节点对任务进行计算并把结果反馈给中心节点。采用ZooKeeper技术进行服务注册与发现，使用Netty框架开发网络底层通信协议，对于二进制数据进行了序列化与反序列化的处理，同时使用远程过程调用保证对从节点的任务调用
+  \item 结合优先级、定时任务、上传时间等多方面制定动态任务分配算法，中心节点根据动态分配算法将任务分发到任务节点。使用心跳检测机制中心节点可以实时的获取服务节点的运行状态，确保当任务节点出现单点故障时能够及时的进行任务重传保证系统具有容错性
 \end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
-\begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+\datedsubsection{\textbf{基于数据挖掘的人体健康管理系统}}{2016年4月 -- 2017年4月}
+\role{国创项目}{项目负责人}
 \begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
+  \item 编程学习：对Android开发、PHP和Java Web（SSH）框架、MySQL和SQLite关系型数据库、Python数据处理等编程技能进行了学习
+  \item 软件开发：通过穿戴设备的授权访问获取用户每日锻炼数据，并将数据通过图表形式展现出来。允许用户手动输入数据并使用SQLite对数据进行本地存储，通过网络将所有用户数据备份，并根据每个用户的身体状况提供合理的锻炼饮食建议。后台使用PHP对用户进行用户验证，将数据持久化到MySQL中
+  \item 数据挖掘：搭建数据挖掘系统，采用Apriori算法和K-means算法分析数据，并通过遗传算法构建推荐模型
+\end{itemize}
+
+\datedsubsection{\textbf{财务预警分析软件}}{2017年12月 -- 2018年4月}
+\begin{onehalfspacing}
+\begin{itemize}
+  \item 主要完成数据导入模块、模型计算模块、数据展示模块、数据导出模块，将各个模块进行封装接口传递给前端调用
+  \item 项目使用Python语言开发，用户界面使用PyQT5框架，后台数据处理与模型运算使用Numpy、Pandas、Matplotlib、Scipy等框架
 \end{itemize}
 \end{onehalfspacing}
+
+% \datedsubsection{\textbf{Online Judge 算法训练}}{2017年2月 -- 至今}
+% \begin{onehalfspacing}
+% \begin{itemize}
+%   \item 在LeetCode、蓝桥杯、USACO、POJ等Online Judge网站进行算法训练。结合《算法导论》等经典算法书籍对算法进行了系统学习，对二叉树、线性表等数据结构以及动态规划、贪心、图论等算法有了更加深入的了解。获得蓝桥杯省级竞赛一等奖、全国总决赛三等奖。本着分享的想法，将刷题过程中的解题思路同步在个人博客，并将代码放在GitHub上分享交流，系统学习了Git的使用技巧
+% \end{itemize}
+% \end{onehalfspacing}
+
+% \datedsubsection{\textbf{基于MFC/Java GUI的应用程序}}{2015年12月 -- 2016年7月}
+% \begin{onehalfspacing}
+% \begin{itemize}
+%   \item 完成哈夫曼图片压缩、图与景区管理系统、连连看、2048、俄罗斯方块等十数个应用程序，增强了对哈夫曼压缩算法、图论算法等的理解
+%   \item 对面向对象编程有了更深的理解，掌握了C++的STL和Java的容器、异常以及MFC和Java GUI编程等
+% \end{itemize}
+% \end{onehalfspacing}
+
+% \datedsubsection{\textbf{石头日报}}{2017年5月 -- 2017年6月}
+% \begin{onehalfspacing}
+% \begin{itemize}
+%   \item 为锻炼自己团队开发能力，提高团队协作意识并获得相应经验，组织成立一个Android开发项目小组，完成聚合类阅读App石头日报。主要负责系统结构设计和服务器后台设计，运用MVP系统架构设计Android客户端，使用SSM框架完成服务端开发
+% \end{itemize}
+% \end{onehalfspacing}
+
+% \datedsubsection{\textbf{无线点餐系统}}{2017年6月 -- 2017年7月}
+% \begin{onehalfspacing}
+% \begin{itemize}
+%   \item 无线点餐系统包括Android平板端、Google推行的Material Design设计风格手机端的无线点餐App，尝试使用Spring Boot开发后台服务器，实现无线点餐系统
+% \end{itemize}
+% \end{onehalfspacing}
+
+% \datedsubsection{\textbf{办公自动化系统}}{2017年6月 -- 2017年7月}
+% \begin{onehalfspacing}
+% \begin{itemize}
+%   \item 办公自动化系统使用BootStrap设计风格的网页设计，后台使用SSM框架并使用Shiro框架进行权限控制。主要负责需求分析以及后台开发
+%   \item 项目组内熟练使用Git进行协同开发，效率较高
+% \end{itemize}
+% \end{onehalfspacing}
 
 % Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
+% \datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+% An xxx optimized for xxx\cite{verma2015large}
+% \begin{itemize}
 %  \item main contribution
-%\end{itemize}
+% \end{itemize}
 
-\section{\faCogs\ IT 技能}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
-\end{itemize}
+\section{\faCube\ 发表成果}
+\datedline{\textit{计算机软件著作权},Moving健康管理系统}{2017年6月}
 
-\section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
+\section{\faStar\ 获奖情况}
+\datedline{\textit{全国三等奖}, 第八届工信部“蓝桥杯”Java软件开发大赛}{2017年5月}
+\datedline{\textit{校级优秀班干部}, 武汉理工大学}{2017年10月}
+\datedline{\textit{国家励志奖学金}, 武汉理工大学}{2017年10月}
+\datedline{\textit{校级三好学生}, 武汉理工大学}{2016年10月}
+\datedline{\textit{国家励志奖学金}, 武汉理工大学}{2016年10月}
+\datedline{\textit{院级三好学生}, 武汉理工大学}{2015年10月}
+\datedline{\textit{校级三等奖学金}, 武汉理工大学}{2015年10月}
 
-\section{\faInfo\ 其他}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
-\end{itemize}
+
+% \section{\faCogs\ IT 技能}
+% % increase linespacing [parsep=0.5ex]
+% \begin{itemize}[parsep=0.5ex]
+%   \item 编程语言: C == Python > C++ > Java
+%   \item 平台: Linux
+%   \item 开发: xxx
+% \end{itemize}
+
+% \section{\faInfo\ 其他}
+% % increase linespacing [parsep=0.5ex]
+% \begin{itemize}[parsep=0.5ex]
+%   \item 技术博客: http://blog.yours.me
+%   \item GitHub: https://github.com/username
+%   \item 语言: 英语 - 熟练(TOEFL xxx)
+% \end{itemize}
 
 %% Reference
 %\newpage
