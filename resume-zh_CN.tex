@@ -14,115 +14,54 @@
 \name{张文杰}
 
 \basicInfo{
-  \phone{155-XXXX-XXXX} \textperiodcentered\ 
+  \phone{155-2754-3952} \textperiodcentered\ 
   \email{memory7734@gmail.com} \textperiodcentered\ 
   \github[memory7734]{https://github.com/memory7734}}
  
 \section{\faGraduationCap\ 教育背景}
-\datedsubsection{\textbf{华中科技大学}\ 计算机科学与技术学院\ 计算机技术}{2018 -- 至今}
-\datedsubsection{\textbf{武汉理工大学}\ 计算机科学与技术学院\ 软件工程}{2014 -- 2018}
+\datedsubsection{\textbf{华中科技大学}\  计算机技术\ 硕士研究生在读}{2018.9 - 至今}
+\ 推荐免试入学，校级一等奖学金，智能与分布计算实验室优秀工程奖，预计2020年7月毕业
+\datedsubsection{\textbf{武汉理工大学}\  软件工程\ 工学学士}{2014.9 - 2018.6}
+\ \textbf{排名19/225（前10\%）}，CET-4：497，CET-6：486，国家级大学生创新创业训练计划优秀项目，国奖励志奖学金(2次)，校级三等奖学金，校级三好学生，校级优秀班干部，院级三好学生，武汉理工大学优秀毕业生
 
-\section{\faUsers\ 项目经历}
+\section{\faUsers\ 实习经历}
+\datedsubsection{\textbf{阿里巴巴-新零售技术事业群}}{2019.6 - 至今}
+\begin{onehalfspacing}
+\begin{itemize}
+  \item todo
+\end{itemize}
+\end{onehalfspacing}
 
-\datedsubsection{\textbf{基于分布式的可拔插计算调度框架}}{2018年4月 -- 2018年6月}
+\datedsubsection{\textbf{南京吾道知信信息技术有限公司}}{2019.1 - 2019.6}
+\begin{onehalfspacing}
+\begin{itemize}
+  \item 针对中国证监会、上海证券交易所、深圳证券交易所和中国债券信息网分别开发公司债部分的通用爬虫，对各地市的环保局、工商局官网进行指定内容的爬取
+  \item 负责“公司债”类型的公告筛选、文本解析工作。对于10万多份PDF公告进行去重匹配，将其中的结构化和非结构化数据，通过规则将涉及26种类型的公告信息处理为结构化数据约600个字段，生成结果交内容团队校对
+  \item 将解析处理流程与公司开发的校对系统整合，定时更新提取结果，内容团队可以直接通过浏览器完成校对，根据校对结果将公告提取出的信息自动生成时间轴，并与公司其它产品关联，将一支公司债的完整生命周期作为产品展示出来
+\end{itemize}
+\end{onehalfspacing}
+
+\section{\faInbox\ 项目经历}
+
+\datedsubsection{\textbf{基于分布式的可拔插计算调度框架}}{2018.4 - 2018.6}
 \begin{onehalfspacing}
 \begin{itemize}
   \item 采用主从结构，中心节点负责系统的调度与任务的分发工作，任务节点对任务进行计算并把结果反馈给中心节点。采用ZooKeeper技术进行服务注册与发现，使用Netty框架开发网络底层通信协议，对于二进制数据进行了序列化与反序列化的处理，同时使用远程过程调用保证对从节点的任务调用
-  \item 结合优先级、定时任务、上传时间等多方面制定动态任务分配算法，中心节点根据动态分配算法将任务分发到任务节点。使用心跳检测机制中心节点可以实时的获取服务节点的运行状态，确保当任务节点出现单点故障时能够及时的进行任务重传保证系统具有容错性
+  \item 结合优先级、定时任务、上传时间等多方面制定动态任务分配算法，中心节点根据动态分配算法将任务分发到任务节点。使用心跳检测机制中心节点可以实时的获取服务节点的运行状态，确保当任务节点出现单点故障时能够及时的进行任务重传保证系统具有一定的容错性
 \end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{基于数据挖掘的人体健康管理系统}}{2016年4月 -- 2017年4月}
-\role{国创项目}{项目负责人}
-\begin{itemize}
-  \item 编程学习：对Android开发、PHP和Java Web（SSH）框架、MySQL和SQLite关系型数据库、Python数据处理等编程技能进行了学习
-  \item 软件开发：通过穿戴设备的授权访问获取用户每日锻炼数据，并将数据通过图表形式展现出来。允许用户手动输入数据并使用SQLite对数据进行本地存储，通过网络将所有用户数据备份，并根据每个用户的身体状况提供合理的锻炼饮食建议。后台使用PHP对用户进行用户验证，将数据持久化到MySQL中
-  \item 数据挖掘：搭建数据挖掘系统，采用Apriori算法和K-means算法分析数据，并通过遗传算法构建推荐模型
-\end{itemize}
-
-\datedsubsection{\textbf{财务预警分析软件}}{2017年12月 -- 2018年4月}
+\section{\faPaperPlaneO\ 比赛经历}
+\datedsubsection{\textbf{第五届中间件性能挑战赛}}{2019.6 - 2019.7}
 \begin{onehalfspacing}
 \begin{itemize}
-  \item 主要完成数据导入模块、模型计算模块、数据展示模块、数据导出模块，将各个模块进行封装接口传递给前端调用
-  \item 项目使用Python语言开发，用户界面使用PyQT5框架，后台数据处理与模型运算使用Numpy、Pandas、Matplotlib、Scipy等框架
+  \item 自适应负载均衡的设计实现：基于动态调整的最小活跃线程数调整请求分发，有效测试时段60s内有效请求数超过114万，最大TPS超过2万
 \end{itemize}
 \end{onehalfspacing}
 
-% \datedsubsection{\textbf{Online Judge 算法训练}}{2017年2月 -- 至今}
-% \begin{onehalfspacing}
-% \begin{itemize}
-%   \item 在LeetCode、蓝桥杯、USACO、POJ等Online Judge网站进行算法训练。结合《算法导论》等经典算法书籍对算法进行了系统学习，对二叉树、线性表等数据结构以及动态规划、贪心、图论等算法有了更加深入的了解。获得蓝桥杯省级竞赛一等奖、全国总决赛三等奖。本着分享的想法，将刷题过程中的解题思路同步在个人博客，并将代码放在GitHub上分享交流，系统学习了Git的使用技巧
-% \end{itemize}
-% \end{onehalfspacing}
+\section{\faStar\ 成果奖项}
+\datedline{Moving\textit{健康管理系统},计算机软件著作权}{2017.6}
+\datedline{\textit{第八届工信部“蓝桥杯”}Java\textit{软件开发大赛全国三等奖}}{2017.5}
+% \section{\faCube\ 发表成果}
 
-% \datedsubsection{\textbf{基于MFC/Java GUI的应用程序}}{2015年12月 -- 2016年7月}
-% \begin{onehalfspacing}
-% \begin{itemize}
-%   \item 完成哈夫曼图片压缩、图与景区管理系统、连连看、2048、俄罗斯方块等十数个应用程序，增强了对哈夫曼压缩算法、图论算法等的理解
-%   \item 对面向对象编程有了更深的理解，掌握了C++的STL和Java的容器、异常以及MFC和Java GUI编程等
-% \end{itemize}
-% \end{onehalfspacing}
-
-% \datedsubsection{\textbf{石头日报}}{2017年5月 -- 2017年6月}
-% \begin{onehalfspacing}
-% \begin{itemize}
-%   \item 为锻炼自己团队开发能力，提高团队协作意识并获得相应经验，组织成立一个Android开发项目小组，完成聚合类阅读App石头日报。主要负责系统结构设计和服务器后台设计，运用MVP系统架构设计Android客户端，使用SSM框架完成服务端开发
-% \end{itemize}
-% \end{onehalfspacing}
-
-% \datedsubsection{\textbf{无线点餐系统}}{2017年6月 -- 2017年7月}
-% \begin{onehalfspacing}
-% \begin{itemize}
-%   \item 无线点餐系统包括Android平板端、Google推行的Material Design设计风格手机端的无线点餐App，尝试使用Spring Boot开发后台服务器，实现无线点餐系统
-% \end{itemize}
-% \end{onehalfspacing}
-
-% \datedsubsection{\textbf{办公自动化系统}}{2017年6月 -- 2017年7月}
-% \begin{onehalfspacing}
-% \begin{itemize}
-%   \item 办公自动化系统使用BootStrap设计风格的网页设计，后台使用SSM框架并使用Shiro框架进行权限控制。主要负责需求分析以及后台开发
-%   \item 项目组内熟练使用Git进行协同开发，效率较高
-% \end{itemize}
-% \end{onehalfspacing}
-
-% Reference Test
-% \datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-% An xxx optimized for xxx\cite{verma2015large}
-% \begin{itemize}
-%  \item main contribution
-% \end{itemize}
-
-\section{\faCube\ 发表成果}
-\datedline{\textit{计算机软件著作权},Moving健康管理系统}{2017年6月}
-
-\section{\faStar\ 获奖情况}
-\datedline{\textit{全国三等奖}, 第八届工信部“蓝桥杯”Java软件开发大赛}{2017年5月}
-\datedline{\textit{校级优秀班干部}, 武汉理工大学}{2017年10月}
-\datedline{\textit{国家励志奖学金}, 武汉理工大学}{2017年10月}
-\datedline{\textit{校级三好学生}, 武汉理工大学}{2016年10月}
-\datedline{\textit{国家励志奖学金}, 武汉理工大学}{2016年10月}
-\datedline{\textit{院级三好学生}, 武汉理工大学}{2015年10月}
-\datedline{\textit{校级三等奖学金}, 武汉理工大学}{2015年10月}
-
-
-% \section{\faCogs\ IT 技能}
-% % increase linespacing [parsep=0.5ex]
-% \begin{itemize}[parsep=0.5ex]
-%   \item 编程语言: C == Python > C++ > Java
-%   \item 平台: Linux
-%   \item 开发: xxx
-% \end{itemize}
-
-% \section{\faInfo\ 其他}
-% % increase linespacing [parsep=0.5ex]
-% \begin{itemize}[parsep=0.5ex]
-%   \item 技术博客: http://blog.yours.me
-%   \item GitHub: https://github.com/username
-%   \item 语言: 英语 - 熟练(TOEFL xxx)
-% \end{itemize}
-
-%% Reference
-%\newpage
-%\bibliographystyle{IEEETran}
-%\bibliography{mycite}
 \end{document}
